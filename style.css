@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: rgb(29, 30, 34); 
+}
+header#header {
+  width: 100%;
+  height: 70px;
+  background-color: rgb(52, 54, 62);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-bottom: 0px;
+  padding-bottom: 20px;
+}
+h1,h2{
+  width: 100%;
+  text-align: center;
+}
+textarea{
+  min-width: 300px;
+  max-width: 780px;
+  width: 780px;
+  max-height: 90px;
+  height: 90px;
+  resize: none;
+  outline: none;
+  text-indent: 20px;
+  border-radius:  10px;
+  margin: 10px auto;
+  border: 0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  background-color: rgba(68, 72, 87, 0.4);
+}
+div#teclado {
+  min-width: 300px;
+  max-width: 780px;
+  width: 780px;
+  height: 270px;
+  max-height: 450px;
+  background-color: rgba(68, 72, 87, 0.4);
+  border: 3px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+#campo1 {
+  width: 770px;
+  height: 260px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+li {
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+li:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+p {
+  font-size: 8px;
+  position: relative;
+  top: -15px;
+  right: 0px;
+}
+/*especial teclas*/
+#tecla13 {
+  width: 115px;
+}
+#tecla14 {
+  width: 65px;
+}
+#tecla27 {
+  width: 95px;
+}
+#tecla28 {
+  width: 75px;
+}
+#tecla41 {
+  width: 85px;
+}
+#tecla42,
+#tecla54,
+#tecla55 {
+  width: 68px;
+}
+#tecla56,
+#tecla63 {
+  width: 80px;
+}
+#tecla57,
+#tecla58,
+#tecla60,
+#tecla61,
+#tecla62 {
+  width: 55px;
+}
+#tecla59 {
+  width: 290px;
+}
+@media only screen and (max-width: 375px){
+  body{
+    /*background-color: white;*/
+  }
+  #tecla0,#tecla11,#tecla12,#tecla13,
+  #tecla14,#tecla25,#tecla26,#tecla27,
+  #tecla28,#tecla38,#tecla39,#tecla40,
+  #tecla41,#tecla43,#tecla53,#tecla54,
+  #tecla55,#tecla56,#tecla57,#tecla58,
+  #tecla60,#tecla61,#tecla62,#tecla63{
+    display: none;
+  }
+  li {
+    text-decoration: none;
+    width: 27px;
+    height: 45px;
+    margin: 1px;
+  }
+  #tecla42{
+    width: 40px;
+    
+  }
+  #tecla59{
+    width: 100px;
+  }
+}
